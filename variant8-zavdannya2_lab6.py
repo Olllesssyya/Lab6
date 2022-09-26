@@ -1,13 +1,16 @@
 #Лабароторна 6 варіант 8 завдання2. Посилання на GitHub https://github.com/Olllesssyya/Lab6
 import math
-a=int(input("Введіть ціле число a:"))
-b=int(input("Введіть ціле число b:"))
+a=float(input("Введіть ціле число a:"))
+b=float(input("Введіть ціле число b:"))
 h=float(input("Введіть h:"))
 x=a
-if a<b:
-    while x<b:
+i=0
+while x<b:
         f=math.log(math.fabs(x+pow(math.e,x)),3)
-        print("При x=%.1f значення функції дорівнює: %f"%(x,f))
+        f=round(f,4)
+        i=i+1
+        print (i,'x =',x,'f =',f)
         x=x+h
-else:
-    print("Число а повинно бути більше, чим b")
+        x=round(x,3)
+        if x>b:
+            break

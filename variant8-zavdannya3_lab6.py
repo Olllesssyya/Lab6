@@ -5,11 +5,12 @@ b=int(input("Введіть ціле число b:"))
 h=float(input("Введіть h:"))
 spisok=[]
 x=a
-if a<b:
-    while x<b:
-        f=math.log(math.fabs(x+pow(math.e,x)),3)
-        spisok.append(f)
-        x=x+h
-else:
-    print("Число а повинно бути більше, чим b")
+while x<b:
+    f=math.log(math.fabs(x+pow(math.e,x)),3)
+    f=round(f,4)
+    spisok.append(f)
+    x=x+h
+    x=round(x,3)
+    if x>b:
+        break
 print(*spisok, sep="\n")
