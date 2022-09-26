@@ -1,8 +1,8 @@
 #Лабароторна 6 варіант 8 завдання3. Посилання на GitHub https://github.com/Olllesssyya/Lab6
 import math
-a=int(input("Введіть ціле число a:"))
-b=int(input("Введіть ціле число b:"))
-h=float(input("Введіть h:"))
+a=float(input("Введіть число a:"))
+b=float(input("Введіть число b:"))
+h=float(input("Введіть число h:"))
 spisok=[]
 x=a
 while x<b:
