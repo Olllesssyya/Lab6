@@ -11,6 +11,4 @@ while x<b:
     spisok.append(f)
     x=x+h
     x=round(x,3)
-    if x>b:
-        break
 print(*spisok, sep="\n")
